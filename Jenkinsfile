@@ -5,7 +5,7 @@ node {
     }
 
     stage('Build image') {
-       dockerImage = docker.build("joj1209/web_count:v1.0")
+       dockerImage = docker.build("bskim123/web_count:v1.0")
     }
 
     stage('Push image') {
