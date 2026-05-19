@@ -1,6 +1,7 @@
 node {
     stage('Clone repository') {
-        git credentialsId: 'github_access_token', url: 'https://github.com/joj1209/docker-lab.git'
+        git branch: 'main',
+            credentialsId: 'github_access_token', url: 'https://github.com/joj1209/docker-lab.git'
     }
 
     stage('Build image') {
